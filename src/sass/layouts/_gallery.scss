@@ -1,4 +1,32 @@
-.gallery {
-  background-image: linear-gradient($secondary-body-color 40%, $primary-body-color 40%);
-  padding: 0;
+// .gallery {
+//   background-image: linear-gradient($secondary-body-color 40%, $primary-body-color 40%);
+//   padding: 0;
+// }
+* { box-sizing: border-box; }
+
+.gallery{
+  height: 430px;
+ background: linear-gradient()
+}
+
+.grid__sizer,
+.grid__item {
+  width: 14.29%;
+  border-radius: 5px;
+}
+.grid__item {
+  float: left;  
+  height: 138px;
+  
+}
+
+.grid__item--big {
+  width: 14.29% * 2;
+  height: 283px;
+ }
+
+ .grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
