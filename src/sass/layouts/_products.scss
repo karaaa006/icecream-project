@@ -13,28 +13,17 @@
   width: 100%;
 }
 
-// .products__label {
-//   font-size: 18px;
-//   line-height: 1.17;
-//   color: $secondary-accent-color;
-//   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   -webkit-text-stroke: 1px solid #000000;
+.products__title {
+  margin-bottom: 130px;
 
-//   margin: 0;
-//   padding: 0;
+  @include for-tablet {
+    margin-bottom: 150px;
+  }
 
-//   margin-bottom: 15px;
-// }
-
-// .products__title {
-//   font-weight: 400;
-//   font-size: 34px;
-//   line-height: 1.147;
-//   color: $primary-accent-color;
-
-//   margin: 0;
-//   padding: 0;
-// }
+  @include for-desktop {
+    margin-bottom: 259px;
+  }
+}
 
 .products__list {
   display: flex;
@@ -57,6 +46,8 @@
   justify-content: flex-end;
   border-radius: 24px;
   padding: 161px 40px 40px 40px;
+  margin-bottom: 130px;
+  max-width: 280px;
 
   @include for-tablet {
     flex-basis: calc((100% - 2 * 20px) / 3);
@@ -69,42 +60,15 @@
   }
 
   &:first-child {
-    margin-top: 144px;
     background: $first-bg-color;
-
-    @include for-tablet {
-      margin-top: 150px;
-    }
-
-    @include for-desktop {
-      margin-top: 259px;
-    }
   }
 
   &:nth-child(2) {
-    margin-top: 130px;
     background: $second-bg-color;
-
-    @include for-tablet {
-      margin-top: 150px;
-    }
-
-    @include for-desktop {
-      margin-top: 259px;
-    }
   }
 
   &:nth-child(3) {
-    margin-top: 130px;
     background: $third-bg-color;
-
-    @include for-tablet {
-      margin-top: 150px;
-    }
-
-    @include for-desktop {
-      margin-top: 259px;
-    }
   }
 
   &:not(:last-child) {
@@ -162,9 +126,7 @@
     height: 6px;
     background-image: url(/images/dots.svg);
     background-size: cover;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 30px auto;
 
     @include for-desktop {
       margin: 32px auto;
@@ -254,7 +216,6 @@
   color: $primary-text-color;
   margin: 0;
   padding: 0;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -282,8 +243,10 @@
 
 .products__overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+
+  @extend .products__item;
+  // width: 100%;
+  // height: 100%;
   // opacity: 1;
 
   &.is-hidden {
@@ -300,5 +263,6 @@
   line-height: 1.75;
   text-align: center;
   letter-spacing: 0.04em;
+
   color: $primary-accent-color;
 }
