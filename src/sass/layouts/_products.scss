@@ -282,8 +282,10 @@
 
 .products__overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+
+  @extend .products__item;
+  // width: 100%;
+  // height: 100%;
   // opacity: 1;
 
   &.is-hidden {
@@ -300,5 +302,6 @@
   line-height: 1.75;
   text-align: center;
   letter-spacing: 0.04em;
+  
   color: $primary-accent-color;
 }
