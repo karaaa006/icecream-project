@@ -1,0 +1,304 @@
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    
+    @media screen and (max-width: 767px) {
+        width: 280px;
+        margin-top: 80px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 620px;
+        margin-top: 121px;
+    }
+          
+    @media screen and (min-width: 1280px) {
+        width: 926px;
+        margin-top: 123px;
+    }
+}
+
+.reviews__foto {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 29px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-bottom: 19px;   
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;   
+    } 
+}
+
+.reviews__content {
+    position: relative;
+
+    background: rgba(250, 250, 250, 1);
+
+    @media screen and  (max-width: 767px) {
+        width: 280px;
+        height: 308px;
+        padding-top: 43px;
+        padding-right: 50px;
+        padding-bottom: 26px;
+        padding-left: 50px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 620px;
+        height: 164px;
+        padding-top: 47px;
+        padding-right: 36px;
+        padding-bottom: 34px;
+        padding-left: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 936px;
+        height: 138px;
+        padding-top: 47px;
+        padding-right: 54px;
+        padding-bottom: 39px;    
+        padding-left: 59px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: 61px;
+        z-index: 0;
+
+        display: block;
+        width: 54px;
+        height: 40px;
+
+        background-image: url(../images/blockquote.png);
+         
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            top: 30px;
+            left: 40px;
+        }
+          
+        @media screen and (min-width: 1280px) {
+            top: 32px;
+            left: 50px;
+        }
+    }
+}
+.reviews__text--gradient {
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+
+    @media screen and (max-width: 767px) {
+        width: 180px;
+        padding-left: 7px;
+        padding-right: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 524px;
+        padding-left: 20px;
+        padding-right: 44px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 813px;
+        padding-left: 28px;
+        padding-right: 35px;
+    }
+}
+
+.reviews__text {
+    position: relative;  
+    z-index: 1;
+
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+        
+    color:#000000;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 2.55; 
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 14px;
+        line-height: 2.16;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+    } 
+}
+
+.reviews__author {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.86;
+    text-align: center;
+
+    color:#000000;
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;   
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+    } 
+}
+
+.reviews__decor-box {
+    display: flex;
+    justify-content: center;
+      
+    @media screen and (max-width: 767px) {
+        margin-top: 30px;
+        margin-bottom: 18px;
+    }
+      
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-top: 24px;
+        margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.reviews__decor-point {
+    width: 4px;
+    height: 4px;
+
+    background-color: #c7133e;
+    border-radius: 50%;
+          
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+// Slider
+
+.slider {
+    position: relative;
+   
+    @media screen and (max-width: 767px) {
+        width: 280px;        
+    }
+          
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 620px;
+    }
+          
+    @media screen and (min-width: 1280px) {
+        width: 926px;
+    }
+}
+
+.slides {
+    position: absolute;
+    z-index: 0;
+    
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: 0;
+    transform: scale(1.5);
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+
+    @media screen and (max-width: 767px) {
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 620px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 926px;
+    }
+}
+      
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+    z-index: 1;
+
+    opacity: 1;
+    transform: scale(1);
+}
+      
+.wrapper > input {
+    display: none;
+}
+
+.controls {
+    position: absolute;  
+    left: 50%;
+
+    display: flex;
+        
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 767px) {
+        top: 610px; 
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        top: 490px; 
+    }
+    @media screen and (min-width: 1280px) {
+        top: 460px; 
+    }
+        
+}
+
+.controls__lable {
+    width: 12px;
+    height: 12px;
+
+    background-color: #d9d9d9;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: background ease-in-out 0.01s;
+
+    &:not(:last-child){
+        margin-right: 18px;
+    }
+    &:not(:first-child){
+        margin-left: 16px;
+    }
+}
+  
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+    width: 16px;
+    height: 13px;
+    
+    border-radius: 0;
+    background: url(../images/home.svg) center no-repeat;
+    background-size: contain;
+    background-color: #fff;
+} 
