@@ -48,6 +48,7 @@
   padding: 161px 40px 40px 40px;
   margin-bottom: 130px;
   max-width: 280px;
+  overflow-y: hidden;
 
   @include for-tablet {
     flex-basis: calc((100% - 2 * 20px) / 3);
