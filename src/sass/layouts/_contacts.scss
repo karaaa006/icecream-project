@@ -262,7 +262,8 @@
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
- overflow-y: scroll;
+ 
+ 
  
     @media screen and (max-width: 480px) {
      
@@ -271,12 +272,15 @@
      overflow-y: scroll;
      
     } 
+
     @media screen and (min-width: 480px) and (max-width: 767px) {
      width: 400px;
     }
+
     @include for-tablet {
      width: 620px;   
     }
+
     @include for-desktop {
         width: 1040px; 
     }
