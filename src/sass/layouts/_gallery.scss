@@ -5,23 +5,24 @@
 * { box-sizing: border-box; }
 
 .gallery{
-  height: 430px;
  background: linear-gradient()
 }
 
 .grid__sizer,
 .grid__item {
-  width: 14.29%;
-  border-radius: 5px;
+  width: 138px;
+  border-radius: 27px;
 }
 .grid__item {
   float: left;  
   height: 138px;
+  border: 2px solid transparent;
+  overflow: hidden;
   
 }
 
 .grid__item--big {
-  width: 14.29% * 2;
+  width: 283px;
   height: 283px;
  }
 
