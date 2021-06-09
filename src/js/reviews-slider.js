@@ -3,5 +3,6 @@ $(document).ready(function () {
      touchMove: true,
      arrows: false,
      dots: true,
+     adaptiveHeight: true,
    });
  });
