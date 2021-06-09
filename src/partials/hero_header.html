@@ -1,17 +1,15 @@
 <section id="hero" class="section hero">
   <header class="container header">
-    <a href="./index.html">
+    <a href="./index.html" >
       <img src="./images/logo.png" alt="логотип" class="logo" />
     </a>
     <div class="menu-container" id="menu-container" data-menu>
+
       <nav class="header-navigation">
+
         <ul class="header-navigation-list list" data-menu-list>
           <li class="header-navigation-list-item">
-            <a
-              href="./index.html"
-              class="header-navigation-link header-navigation-link--action link"
-              >Home</a
-            >
+            <a href="./index.html" class="header-navigation-link header-navigation-link--action link">Home</a>
           </li>
           <li class="header-navigation-list-item">
             <a href="#about" class="header-navigation-link link scrollto">About us</a>
@@ -30,19 +28,13 @@
       <button type="button" class="header-button btn btn--arrow-invert">Buy now</button>
     </div>
     <button type="button" class="menu-button" data-menu-button>
-      <svg
-        class="menu-button-icon"
-        width="20"
-        height="20"
-        aria-label="Переключатель мобильного меню"
-      >
+      <svg class="menu-button-icon" width="20" height="20" aria-label="Переключатель мобильного меню">
         <use href="./images/sprite.svg#icon-menu" class="icon-menu"></use>
         <use href="./images/sprite.svg#icon-close" class="icon-close"></use>
       </svg>
     </button>
     <button type="button" class="header-button-second btn btn--arrow-invert">Buy now</button>
   </header>
-  <h2 class="visually-hidden">Hero</h2>
   <div class="container container__hero">
     <div class="hero__wrap">
       <h1 class="hero__title">
@@ -60,29 +52,24 @@
       </ul>
       <div class="hero__bottom-block">
         <picture class="hero__image-milk">
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/hero-header/desktop/milk-desktop.png    1x,
-              ./images/hero-header/desktop/milk-desktop@2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hero-header/tablet/milk-tablet.png    1x,
-              ./images/hero-header/tablet/milk-tablet@2x.png 2x
-            "
-          />
+            <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/hero-header/desktop/milk-desktop.png    1x,
+                  ./images/hero-header/desktop/milk-desktop@2x.png 2x"
+            />
+            <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero-header/tablet/milk-tablet.png    1x,
+                  ./images/hero-header/tablet/milk-tablet@2x.png 2x"
+            />
 
-          <img src="./images/hero-header/tablet/milk-tablet.png" alt="milk" />
+            <img src="./images/hero-header/tablet/milk-tablet.png" alt="milk" />
         </picture>
         <div class="hero__more">
-          <p class="hero__more-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <button class="btn btn--more hero__btn-more" data-modal-bio-open></button>
+          <p class="hero__more-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+          <button class="btn btn--more hero__btn-more"></button>
         </div>
       </div>
     </div>
@@ -123,7 +110,7 @@
         <span class="hero__counter-label">food trucks</span>
       </div>
     </div>
-    <picture class="hero__image-tasty">
+      <picture class="hero__image-tasty">
       <source
         media="(min-width: 1200px)"
         srcset="
@@ -140,34 +127,5 @@
       />
 
       <img src="./images/hero-header/tablet/tasty-tablet.png" alt="girl" />
-    </picture>
-
-    <div class="backdrop is-hidden" data-modal-bio>
-      <div class="modal">
-        <h2 class="section__title modal__title">Bio & Eco</h2>
-        <p class="modal__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus nisi soluta
-          obcaecati esse a rem, fuga provident temporibus! Molestias nesciunt quae repellendus,
-          inventore fuga adipisci numquam, quos accusamus distinctio velit deleniti commodi, harum
-          minus quod porro enim saepe dicta laudantium libero quibusdam cupiditate odit. Sint eum
-          vero fugiat aspernatur repellat expedita ipsam aperiam quis debitis itaque quaerat,
-          sapiente odio esse dignissimos ipsa quae saepe harum. Magni nisi officiis praesentium
-          error iste, ipsam et voluptate tempore expedita. Fugit enim ipsam temporibus optio cumque
-          voluptates!
-        </p>
-        <p class="modal__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione recusandae quod
-          rerum ducimus magni molestiae tempore dolorum itaque sint ipsam nostrum saepe expedita,
-          doloribus non delectus voluptatum sequi ab.
-        </p>
-        <button
-          type="button"
-          class="btn btn--arrow-invert btn-close__franchise"
-          data-modal-bio-close
-        >
-          Close
-        </button>
-      </div>
-    </div>
-  </div>
+      </picture>
 </section>

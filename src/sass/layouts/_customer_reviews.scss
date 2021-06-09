@@ -1,113 +1,212 @@
-.reviews__section {
-  padding-top: 80px;
-  padding-bottom: 0;
-}
-
-.reviews {
+.wrapper {
+  padding: 0 176px;
   text-align: center;
+  position: relative;
+  height: 250px;
+
+  @media screen and (min-width: 60px) and (max-width: 479.9px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    padding-left: 57px;
+    padding-right: 57px;
+    height: 350px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-left: 74px;
+    padding-right: 74px;
+    height: 300px;
+  }
+}
+
+.reviews__foto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 62px;
+
+  @media screen and (min-width: 60px) and (max-width: 479.9px) {
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    margin-bottom: 66px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  }
+}
+
+.reviews__text,
+.reviews__author {
   font-weight: 500;
-  font-size: 12px;
-  line-height: 2.5;
-}
-
-.reviews__photo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-.reviews__text-wrap {
-  max-width: 930px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  padding: 43px 50px 20px;
-  background-color: #fafafa;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
 }
 
 .reviews__text {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  background-color: #fafafa;
+  padding: 0 87px 0 87px;
+  margin-bottom: 15px;
   position: relative;
-  z-index: 0;
-  margin-left: 11px;
-  margin-right: 11px;
-  background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+  z-index: 1;
 
-  @include for-tablet {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @include for-desktop {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 16px, #e1e1e1 20px);
 
   &::before {
     content: '';
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    z-index: -1;
     display: block;
     width: 54px;
-    height: 40px;
+    height: 41px;
     background-image: url(../images/blockquote.png);
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: 42px;
+
+    @media screen and (min-width: 60px) and (max-width: 479.9px) {
+      left: 1px;
+      top: -20px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767.9px) {
+      left: 35px;
+      top: -20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+      top: -20px;
+      left: 42px;
+    }
+  }
+
+  @media screen and (min-width: 60px) and (max-width: 479.9px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    padding-left: 57px;
+    padding-right: 57px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-left: 74px;
+    padding-right: 74px;
   }
 }
 
-.reviews__author {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.9;
-  margin-bottom: 30px;
-
-  @include for-tablet {
-    font-size: 16px;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35px;
-    height: 4px;
-    background-image: url(../images/rose-dots.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-.slick-dots {
+.reviews__decor-box {
   display: flex;
-  padding: 0;
-  list-style: none;
   justify-content: center;
-  align-items: center;
-}
+  margin-bottom: 15px;
 
-.slick-dots li {
-  &:not(:last-child) {
-    margin-right: 18px;
+  @media screen and (min-width: 60px) and (max-width: 479.9px) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    margin-bottom: 15px;
   }
 }
 
-.slick-dots button {
+.reviews__decor-point {
+  width: 4px;
+  height: 4px;
+  background-color: #c7133e;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+// Slider
+
+.slider {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (min-width: 60px) and (max-width: 479.9px) {
+    padding-left: 57px;
+    padding-right: 57px;
+    height: 350px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    padding-left: 57px;
+    padding-right: 57px;
+    height: 350px;
+  }
+
+  @media screen and (min-width: 550px) and (max-width: 767.9px) {
+    padding-left: 57px;
+    padding-right: 57px;
+    height: 300px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-left: 57px;
+    padding-right: 57px;
+    height: 300px;
+  }
+}
+
+.slides {
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 0;
+  transform: scale(1.5);
+  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+
+.wrapper > input {
+  display: none;
+}
+.controls {
+  margin-top: 35px;
+}
+
+.controls__lable {
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 18px 0 16px;
+  position: relative;
+  border-radius: 50%;
+  transition: background ease-in-out 0.01s;
   width: 12px;
   height: 12px;
-  display: block;
-  padding: 0;
-  border-radius: 10px;
-  border: none;
-  color: transparent;
+  background-color: #d9d9d9;
 }
 
-.slick-active button {
-  background-image: url(../images/home.svg);
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+  width: 16px;
+  height: 13px;
+  border-radius: 0;
+  background: url(../images/home.svg) center no-repeat;
+  background-size: contain;
+  background-color: #fff;
 }
