@@ -259,7 +259,7 @@
  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, .1);
  border-radius: 24px; 
  position: absolute;
- top: 100px;
+ top: 5%;
  left: 50%;
  transform: translate(-50%);
  width: 80%;   
@@ -272,8 +272,6 @@
     @include for-desktop {
         width: 1040px; 
     }
-
-
 }
 
 .btn-close__location {
@@ -282,7 +280,22 @@
     margin-left: auto;
     margin-top: 15px;    
 }
-   
+
+ // стили карты 
+.gmap_iframe {
+    position:relative;
+    width: 100%;
+    height: 600px;
+    text-align:right;
+    border: none;
+    margin: 0;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    width: 100%;
+    height: 500px;
+}
 
 /* модальное окно франшизы */
 .modal-franchise {
@@ -316,22 +329,17 @@
 .form__licence {
     margin-top: 20px;
     margin-bottom: 30px;
-  }
+}
   
-  .form__licence-label {
-    display: inline-block;
-    letter-spacing: 0;
-    font-size: 12px;
-    line-height: 1.17;
-   
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.03em;
-      
-  }
+.form__licence-label {
+    display: flex;
+    align-items: center;
+
+    line-height: 1.17;   
+    letter-spacing: 0.03em;      
+}
   
-  .form__licence-label::before {
+.form__licence-label::before {
     content: "";
     display: inline-block;
     margin-right: 10px;
@@ -341,19 +349,19 @@
 
     border: 1px solid black;
     border-radius: 2px;
-  }
+}
   
-  .form__checkbox:checked + .form__licence-label::before {
+.form__checkbox:checked + .form__licence-label::before {
     background-image: url(/images/icon-check.svg);
     background-color: $primary-accent-color;
     border-color: $primary-text-color;
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: border-box;
-  }
+}
   
-  .form__link {
+.form__link {
     margin-left: 4px;
     display: inline-block;
     color: $third-text-color;
-  }
+}
