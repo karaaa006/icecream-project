@@ -51,7 +51,7 @@
 }
 
 .menu-container {
-  padding: 60px 21px 0;
+  padding-top: 60px;
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -62,18 +62,15 @@
   display: flex;
   flex-direction: column-reverse;
   background-color: $side-menu-bg-color;
+  width: 100%;
 
-  @include for-phone-only {
-    width: 100%;
-  }
-
-  @include for-phone-to-desktop {
+  @include for-tablet {
     width: 254px;
   }
 
   @include for-desktop {
+    width: auto;
     padding: 0;
-    transform: none;
     display: flex;
     position: static;
     align-items: center;
@@ -110,7 +107,6 @@
 }
 
 .header-navigation-list {
-  padding: 0;
   margin-top: 21px;
   @media screen and (max-width: 1199px) {
     margin-bottom: 100vh;
@@ -125,6 +121,11 @@
 
 .header-navigation-list-item {
   position: relative;
+  border-top: 1px solid #e18298;
+
+  @include for-desktop {
+    border: none;
+  }
 
   &:not(:first-child) {
     @include for-desktop {
@@ -132,44 +133,24 @@
     }
   }
 
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 1px;
-    background-color: #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
 
     @include for-desktop {
-      display: none;
-    }
-  }
-
-  &:last-child::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 1px;
-    background-color: #e18298;
-
-    @include for-desktop {
-      display: none;
+      border: none;
     }
   }
 }
 
 .header-navigation-link {
-  text-decoration: none;
+  display: block;
   font-size: 14px;
   line-height: 1.28;
   font-weight: 700;
   color: #fff;
-  margin-left: 21px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 24px;
 
   @include for-desktop {
     margin: 0;
@@ -177,13 +158,8 @@
     line-height: 1.31;
   }
 
-  &__action {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.28;
-    font-weight: 700;
+  &--action {
     color: #d41443;
-    margin-left: 21px;
 
     @include for-desktop {
       margin: 0;
