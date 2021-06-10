@@ -17,6 +17,20 @@
   }
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  padding-left: 15px;
+
+  font-family: $secondary-font;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: $primary-accent-color;
+}
+
 .menu-button {
   display: block;
   border: none;
