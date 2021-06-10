@@ -1,4 +1,4 @@
-  (() => {
+(() => {
     const refs = {
       productItem: document.querySelectorAll('.js-products__item'),
     };
@@ -7,6 +7,7 @@
         const tag = event.target.tagName;
         if (tag === 'BUTTON') {
           event.path[1].children[3].classList.toggle('is-hidden');
+          event.target.classList.toggle('is-click');
         }
       });
     });

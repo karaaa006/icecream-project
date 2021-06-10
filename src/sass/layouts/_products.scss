@@ -273,7 +273,7 @@
   
 }
 
-// .btn--back {
-//   @extend .btn--more;
-//   transform: scale(-1, 1);
-// }
+.is-click {
+  @extend .btn--more;
+  transform: scale(-1, 1);
+}
