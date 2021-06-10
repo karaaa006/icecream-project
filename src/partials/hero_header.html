@@ -31,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="header-button btn btn--arrow-invert">Buy now</button>
+      <button type="button" class="header-button btn btn--arrow-invert" data-modal-buy2>Buy now</button>
     </div>
     <button type="button" class="menu-button" data-menu-button>
       <svg
@@ -44,7 +44,59 @@
         <use href="./images/sprite.svg#icon-close" class="icon-close"></use>
       </svg>
     </button>
-    <button type="button" class="header-button-second btn btn--arrow-invert">Buy now</button>
+    <button type="button" class="header-button-second btn btn--arrow-invert" data-modal-buy>Buy now</button>
+
+    <div class="backdrop is-hidden" data-modal-buy_now>
+      <div class="modal-buy">
+            
+      <form class="form">
+
+        <h2 class="form__title">Contact our sales team</h2>
+
+        <div class="form__field">
+        <label class="form__label" for="name">Name</label>
+        <svg class="form__label-icon" width="20px"  height="20px">
+        <use href="./images/sprite.svg#icon-person"></use>
+        </svg>
+        <input class="form__input" type="text" name="user-name" id="name" autocomplete="off"/>
+        </div>
+
+        <div class="form__field">
+        <label class="form__label" for="tel">Phone number</label>
+        <svg class="form__label-icon" width="20px"  height="20px">
+        <use href="./images/sprite.svg#icon-phone"></use>
+        </svg>
+        <input class="form__input" type="tel" name="phone-number" id="tel"/>
+        </div>
+       
+        <div class="form__field">
+        <label class="form__label" for="mail">E-mail</label>
+        <svg class="form__label-icon" width="20px"  height="20px">
+        <use href="./images/sprite.svg#icon-email"></use>
+        </svg>                                    
+        <input class="form__input" type="email" name="email" id="mail"/>
+        </div>
+
+        <div class="form__field">
+        <label class="form__label" for="comment">Let us know about your sweet desire</label>
+        <textarea class="form__input form__textarea " name="comment" id="comment" rows="10" placeholder="Type here"></textarea>
+        </div>
+
+        
+        <button type="submit" class="btn btn--arrow btn-buy">Contact us</button> 
+        <button type="button" class="btn btn--arrow-invert btn-close__buy" data-modal-buy_close>Cancel</button>
+    
+     
+    </form>
+  </div>
+          
+
+
+
+   
+
+    </div>
+
   </header>
   <h2 class="visually-hidden">Hero</h2>
   <div class="container container__hero">
