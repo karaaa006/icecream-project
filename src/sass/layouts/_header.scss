@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: smooth-load 2000ms;
 
   @include for-tablet {
     padding-top: 37px;
@@ -108,6 +109,8 @@
     display: none;
     margin-left: 30px;
 
+    animation: buy-now-pulse 2000ms infinite;
+
     @include for-tablet {
       display: block;
       min-width: 160px;
@@ -116,6 +119,10 @@
     @include for-desktop {
       margin-left: 0;
       min-width: 159px;
+    }
+
+    &.is-open {
+      display: none;
     }
   }
 }
