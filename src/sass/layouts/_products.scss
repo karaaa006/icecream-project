@@ -92,7 +92,7 @@
     max-width: 249px;
     height: 252px;
     background-size: cover;
-    z-index: 100;
+    z-index: 4;
 
     @include for-tablet {
       top: -104px;
