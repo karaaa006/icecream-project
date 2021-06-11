@@ -1,4 +1,4 @@
-# parcel-project-template
+# IceCream-Project
 
 ## Зависимости
 
