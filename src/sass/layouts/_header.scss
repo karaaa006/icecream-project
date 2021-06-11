@@ -101,6 +101,10 @@
   width: 200px;
   margin: 0 auto;
 
+  @include for-desktop {
+    display: none;
+  }
+
   &-second {
     display: none;
     margin-left: 30px;
